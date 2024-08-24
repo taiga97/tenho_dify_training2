@@ -1,0 +1,10 @@
+version: "3.0"
+
+services:
+  difytrainingapplication:
+    container_name: "difytrainingapplication"
+    build: .
+    volumes:
+      - ./:/workspace:delegated
+    ports:
+      - 7860:7860
